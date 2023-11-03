@@ -1,0 +1,33 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .subtitle {
+        color: #000;
+        margin: 18px 0;
+    }
+
+    .desc {
+        color: #898989;
+        font-size: 16px;
+    }
+
+    .red-btn {
+        cursor: pointer;
+        padding: 12px 32px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #DB1E32;
+        border: 1px solid #DB1E32;
+        border-radius: 5px;
+        margin: 20px 0;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+            color: #DB1E32;
+        }
+    }
+}

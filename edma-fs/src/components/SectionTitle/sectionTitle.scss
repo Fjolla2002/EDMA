@@ -1,0 +1,49 @@
+.section-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    h2 {
+        padding: 20px;
+        font-size: 32px;
+        color: #DB1E32;
+        text-transform: uppercase;
+        position: relative;
+    }
+  
+    .bothLines {
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 4px;
+            background: #DB1E32;
+            left: -10px;
+            top: 50%;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 4px;
+            background: #DB1E32;
+            right: -10px;
+            top: 50%;
+        }
+    }
+  
+    .beforeLine {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 4px;
+            background: #DB1E32;
+            left: -5px;
+            top: 50%;
+        }
+      
+    }
+  }
+  
