@@ -1,0 +1,93 @@
+.footer {
+    .top-footer {
+        border-top: 2px solid #fb9ba4;
+        padding: 50px 0;
+        .top-data {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .footer-data {
+                padding: 0 50px;
+                margin-right: 50px;
+                h3 {
+                    margin-top: 20px;
+                    font-size: 24px;
+                    color: #000;
+                }
+                ul {
+                    padding: 20px 0;
+                    list-style-type: none;
+
+                    li {
+                        margin-left: 40px;
+                        margin-bottom: 10px;
+                        color: #898989;
+                    }
+                }
+                .links {
+                    li {
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #DB1E32;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-footer {
+        border-top: 2px solid #fb9ba4;
+
+        .bottom-data {
+            padding: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .bottom-left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .copyright {
+                    padding-right: 10px;
+                    color: #000;
+                    font-size: 16px;
+                }
+
+                .edma {
+                    padding-left: 10px;
+                    border-left: 1px solid #000;
+                    color: #DB1E32;
+                }
+            }
+
+            .bottom-right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .circle {
+                    border-radius: 50%;
+                    padding: 5px;
+                    transition: all 0.4s ease-in-out;
+                    margin-right: 3px;
+
+                    &:hover {
+                        background-color: #ddd;
+                        transform: translateY(-5px);
+                    }
+
+                    &:hover svg .fb{
+                        fill: #DB1E32;
+                    }
+
+                    &:hover svg path {
+                        fill: #DB1E32;
+                    }
+                }
+            }
+        }
+    }
+}

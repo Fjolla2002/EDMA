@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-       <div className='container'>
+       <div className='nav-container'>
             <div className='navbar-content'>
                 <div className='left-side'>
                     <NavLink to="/">
