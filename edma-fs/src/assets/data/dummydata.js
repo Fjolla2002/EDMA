@@ -1,4 +1,8 @@
 import aboutImg from '../images/about.jpg';
+import ircon from '../images/ircon.png';
+import topol from '../images/topol.png';
+import czech from '../images/czech.png';
+import rks from '../images/rks.png';
 
 const data = {
     ger: {
@@ -87,6 +91,36 @@ const data = {
                 }
 
             ]
+        },
+        homeClients: {
+            name: "Unsere Kunden",
+            overName: "FANTASTISCHE PARTNER",
+            content: [
+                {
+                    name: "IRCON",
+                    image: ircon,
+                    path: "http://www.ircon.cz/",
+                    desc: "Ircon Ltd. ist ein Beratungs- und Umsetzungsunternehmen aus der Tschechischen Republik, das sich auf die Vorbereitung und Umsetzung von Entwicklungsprojekten im Bereich Wasser, Wassermanagement, Umwelttechnologien und Landwirtschaft konzentriert. Zu unseren Hauptaktivitäten gehören die Umsetzung von Projekten zur Schaffung, Erneuerung oder Rekonstruktion von Abwassersammel- und -aufbereitungssystemen, die Versorgung schwer zugänglicher und hydrogeologisch anspruchsvoller Gebiete mit sauberem Trinkwasser, die Lösung von Problemen im Zusammenhang mit Wasserknappheit für die Bewässerung in der Landwirtschaft und Spezialprojekte im Zusammenhang mit der Überwachung der Trinkwasserqualität."
+                },
+                {
+                    name: "TOPOLWATER",
+                    image: topol,
+                    path: "http://old.topolwater.eu/english/index.html",
+                    desc: "Das Unternehmen TopolWater, s.r.o. Das Unternehmen wurde im Jahr 2000 als Nachfolger des Unternehmens Ing. gegründet. Jan Topol – Kläranlagen. Bis 1990 fungierte dieses Unternehmen ursprünglich als Planungsbüro und sein Haupttätigkeitsbereich war die Planung von Wasserwirtschaftsbauwerken und Abwasseraufbereitungsanlagen.",
+                },
+                {
+                    name: "CZECH REPUBLIC",
+                    image: czech,
+                    path: "http://www.czechaid.cz/",
+                    desc: "Wir können die Projekte der Tschechischen Entwicklungsagentur nach den Themen, auf die sie sich konzentrieren, oder nach Ländern unterteilen. Weitere Informationen zu einzelnen Projekten und Branchen finden Sie in der Themenübersicht in der rechten Spalte.",
+                },
+                {
+                    name: "REPUBLIC OF KOSOVO",
+                    image: rks,
+                    path: "https://ekosova.rks-gov.net/",
+                    desc: "eKosova ist eine staatliche Plattform, auf der öffentliche Dienstleistungen in Büros und physischen Schaltern von Institutionen elektronisch angeboten werden.",
+                },
+            ]
         }
     },
     en: {
@@ -173,6 +207,36 @@ const data = {
                     specialName: "WWTP",
                     specialDesc: "Project Plus has a host of innovative solutions on offer, not to mention a wealth of knowledge and regional experience on completing turnkey projects for Waste Water Treatment Plants."
                 }
+            ]
+        },
+        homeClients: {
+            name: "Our Clients",
+            overName: "AWESOME PARTNERS",
+            content: [
+                {
+                    name: "IRCON",
+                    image: ircon,
+                    path: "http://www.ircon.cz/",
+                    desc: "Ircon ltd. is a consulting and implementation company from the Czech Republic that focuses on the preparation and implementation of development projects in the field of water, water management, environmental technologies and agriculture. Our main activities include the implementation of projects for the creation, renewal or reconstruction of wastewater collection and treatment systems, the supply of safe drinking water in hard-to-reach and hydrogeologically demanding areas, solving problems related to water shortages for irrigation in agriculture and specialized projects related to monitoring of drinking water quality."
+                },
+                {
+                    name: "TOPOL",
+                    image: topol,
+                    path: "http://old.topolwater.eu/english/index.html",
+                    desc: "The TopolWater, s.r.o. company was established in 2000 as the successor to the company of Ing. Jan Topol – Wastewater treatment plants. Up to 1990 this company originally acted as the design office and its main area of activity was the design of water-management structures and wastewater treatment plants.",
+                },
+                {
+                    name: "CZECH REPUBLIC",
+                    image: czech,
+                    path: "http://www.czechaid.cz/",
+                    desc: "We can divide the projects of the Czech Development Agency according to the topics they focus on or by country. You can find more information about individual projects and sectors in the overview of topics located in the right column.",
+                },
+                {
+                    name: "REPUBLIC OF KOSOVO",
+                    image: rks,
+                    path: "https://ekosova.rks-gov.net/",
+                    desc: "eKosova is a state platform where public services found in offices and physical counters of institutions are offered electronically.",
+                },
             ]
         }
     }
