@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Specialization from '../components/HomeComponents/Specialization/Specialization';
+import Upper from '../components/AboutComponents/Upper/Upper';
+import Middle from '../components/AboutComponents/Middle/Middle';
 
 const AboutUsPage = () => {
   return (
-    <div>AboutUsPage</div>
+    <div>
+      <Upper/>
+      <Middle/>
+      <Specialization/>
+    </div>
   )
 }
 

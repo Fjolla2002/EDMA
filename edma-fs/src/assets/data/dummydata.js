@@ -121,6 +121,36 @@ const data = {
                     desc: "eKosova ist eine staatliche Plattform, auf der öffentliche Dienstleistungen in Büros und physischen Schaltern von Institutionen elektronisch angeboten werden.",
                 },
             ]
+        },
+        aboutPage: {
+            upper: {
+                name: "ÜBER UNS",
+                desc: "Wir entwickeln Projekte von der Konzeption bis zu den letzten Details"
+            },
+            middle: {
+                left: [
+                    {
+                        number: "15",
+                        name: "LANGJÄHRIGE ERFAHRUNG"
+                    },
+                    {
+                        number: "50",
+                        name: "ZUFRIEDENE KUNDEN"
+                    },
+                    {
+                        number: "100",
+                        name: "FERTIGE PROJEKTE"
+                    },
+                    {
+                        number: "25",
+                        name: "DESIGNPREISE"
+                    },
+                ],
+                right: {
+                    title: "EDMA GmbH",
+                    desc: "wurde im Jahr 2010 von einem Expertenteam des Maschinenbaus gegründet und hat über einen Zeitraum von mehr als einem Jahrzehnt mehr als 400 Projekte mit unterschiedlichem Fachwissen im Bereich Bauingenieurwesen und Beratung abgeschlossen. Im Laufe der Entwicklung zahlreicher Bauprojekte sowie der Planung und Umsetzung schlüsselfertiger Projekte haben wir ein tiefes Verständnis dafür gewonnen, wie wir die Effizienz optimieren und maximieren und gleichzeitig die Auswirkungen auf die Umwelt minimieren können."
+                }
+            }
         }
     },
     en: {
@@ -220,7 +250,7 @@ const data = {
                     desc: "Ircon ltd. is a consulting and implementation company from the Czech Republic that focuses on the preparation and implementation of development projects in the field of water, water management, environmental technologies and agriculture. Our main activities include the implementation of projects for the creation, renewal or reconstruction of wastewater collection and treatment systems, the supply of safe drinking water in hard-to-reach and hydrogeologically demanding areas, solving problems related to water shortages for irrigation in agriculture and specialized projects related to monitoring of drinking water quality."
                 },
                 {
-                    name: "TOPOL",
+                    name: "TOPOLWATER",
                     image: topol,
                     path: "http://old.topolwater.eu/english/index.html",
                     desc: "The TopolWater, s.r.o. company was established in 2000 as the successor to the company of Ing. Jan Topol – Wastewater treatment plants. Up to 1990 this company originally acted as the design office and its main area of activity was the design of water-management structures and wastewater treatment plants.",
@@ -238,6 +268,36 @@ const data = {
                     desc: "eKosova is a state platform where public services found in offices and physical counters of institutions are offered electronically.",
                 },
             ]
+        },
+        aboutPage: {
+            upper: {
+                name: "ABOUT US",
+                desc: "We develop projects from conception to the last details"
+            },
+            middle: {
+                left: [
+                    {
+                        number: "15",
+                        name: "YEARS OF EXPERIENCE"
+                    },
+                    {
+                        number: "50",
+                        name: "SATISFIED COSTUMERS"
+                    },
+                    {
+                        number: "100",
+                        name: "FINISHED PROJECTS"
+                    },
+                    {
+                        number: "25",
+                        name: "DESIGN PRICES"
+                    },
+                ],
+                right: {
+                    title: "EDMA GmbH",
+                    desc: "was founded in 2010 by a team of mechanical engineering experts and has completed more than 400 projects with varying expertise in civil engineering and consulting over a period of more than a decade. Over the course of developing numerous construction projects and designing and implementing turnkey projects, we have gained a deep understanding of how to optimize and maximize efficiency while minimizing environmental impact."
+                }
+            }
         }
     }
 }
