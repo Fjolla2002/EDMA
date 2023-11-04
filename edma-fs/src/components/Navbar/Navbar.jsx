@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Context } from '../../Context/Language';
 import {data} from '../../assets/data/dummydata';
 import Menu from './Menu';
@@ -9,6 +9,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [{lang}, dispatch] = useContext(Context);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const enLang = () => {
       const setLang = "en";
@@ -17,6 +18,7 @@ const Navbar = () => {
         type: "LANG",
         payload: { lang: setLang }
       })
+      toggleBtn();
     };
 
     const gerLang = () => {
@@ -26,10 +28,17 @@ const Navbar = () => {
         type: "LANG",
         payload: { lang: setLang }
       })
-    };      
+      toggleBtn();
+    };  
+    
+    const toggleBtn = () => {
+        setIsMenuOpen(!isMenuOpen);
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('open', isMenuOpen);
+    }
 
   return (
-    <div className='navbar'>
+    <div className={`navbar ${isMenuOpen ? 'open': ''}`}>
        <div className='nav-container'>
             <div className='navbar-content'>
                 <div className='left-side'>
@@ -41,7 +50,7 @@ const Navbar = () => {
                     <div className='nav-links'>
                         <ul>
                             {data[lang]?.navbar.map((el) => (
-                                <li key={el.path}>
+                                <li key={el.path} onClick={() => toggleBtn()}>
                                     <Menu 
                                         path={el.path} 
                                         name={el.name}
@@ -80,6 +89,18 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
+                   <button className='circle' onClick={() => toggleBtn()}>
+                    {isMenuOpen? (
+                        <svg width="25px" height="25px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 21.32L21 3.32001" stroke="#DB1E32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M3 3.32001L21 21.32" stroke="#DB1E32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    ):(
+                        <svg className='hamburger-menu' width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H20" stroke="#DB1E32" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    )} 
+                   </button>
                 </div>
             </div>
        </div>

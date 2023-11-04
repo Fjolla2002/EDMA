@@ -127,5 +127,17 @@
                 }
             }
         }
+
+        .bottom-footer {
+            .bottom-data {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .bottom-left {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 }
