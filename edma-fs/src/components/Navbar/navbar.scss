@@ -134,6 +134,13 @@
         }
         
         .navbar-content {
+
+            .left-side {
+                a svg {
+                    width: 100px;
+                    height: auto;
+                }
+            }
             
             .right-side {
                 .nav-links {
