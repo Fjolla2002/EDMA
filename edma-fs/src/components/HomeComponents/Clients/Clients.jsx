@@ -1,11 +1,18 @@
-import React, {useContext} from 'react';
+import React, {useState, useContext} from 'react';
 import  './clients.scss';
 import { data } from '../../../assets/data/dummydata';
 import { Context } from '../../../Context/Language';
+import Modal from './Modal';
 
 const Clients = () => {
     const [{lang}, dispatch] = useContext(Context);
     const clientsdata = data[lang].homeClients;
+    const [client, setClient] = useState();
+
+    const getClient = (el) => {
+        setClient(el);
+    }
+    console.log(client);
   return (
     <div className='clients'>
         <div className='container'>
@@ -18,7 +25,7 @@ const Clients = () => {
                     {clientsdata.content.map((el) => (
                         <div className='single-client' key={el.name}>
                             <p>{el.name}</p>
-                            <button>
+                            <button onClick={() => getClient(el)}>
                                 <img src={el.image} alt={el.name} />
                             </button>
                         </div>
@@ -26,6 +33,15 @@ const Clients = () => {
                 </div>
             </div>
         </div>
+        {client && (
+            <Modal 
+                logo={client.image}
+                name={client.name}
+                desc={client.desc}
+                path={client.path}
+                closeModal={() => setClient()}
+            />
+        )}
     </div>
   )
 }
