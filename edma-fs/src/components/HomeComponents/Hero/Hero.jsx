@@ -7,6 +7,8 @@ const Hero = () => {
     const [{ lang }, dispatch] = useContext(Context);
     const [backImage, setBackImage] = useState(0);
     const nrOfImages = data[lang].homeHero.images.length;
+    const [text, setText] = useState(0);
+    const texti = data[lang].homeHero.content;
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -15,10 +17,27 @@ const Hero = () => {
         return () => clearInterval(interval);
     }, [lang, backImage, nrOfImages]);
 
+    const nextText = () => {
+        setText((prev) => (prev < texti.length - 1 ? prev + 1 : 0));
+    };
+
+    const prevText = () => {
+        setText((prev) => (prev > 0 ? prev - 1 : texti.length - 1));
+    };
+
     return (
         <div className='hero' style={{ backgroundImage: `url(${data[lang].homeHero.images[backImage].image})` }}>
             <div className="container">
-                
+                <div className='slider'>
+                    <div className='text'>
+                        <h2>{data[lang].homeHero.content[text].title}</h2>
+                        <p>{data[lang].homeHero.content[text].subTitle}</p>
+                    </div>
+                    <div className="slider-arrows">
+                        <span onClick={() => prevText()} className="arrow left">&#8249;</span>
+                        <span onClick={() => nextText()} className="arrow right">&#8250;</span>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -92,6 +92,20 @@ const data = {
                 {
                     image: hero3
                 },
+            ],
+            content: [
+                {
+                    title: "Innovationen für die Zukunft des Bauwesens",
+                    subTitle: "Entdecken Sie das Jahrzehnt der Exzellenz im Bauingenieurwesen und der Beratung der EDMA GmbH"
+                },
+                {
+                    title: "Effizienz meistern, Auswirkungen minimieren",
+                    subTitle:"EDMA GmbH: Ihr Partner für nachhaltige Infrastrukturlösungen"
+                },
+                {
+                    title: "Wir setzen neue Maßstäbe für mechanische Dienstleistungen",
+                    subTitle:"EDMA GmbH: Wegweisende Heizungs-, Lüftungs- und Klimatechnik in der Region"
+                },
             ]
         },
         homeAbout: {
@@ -329,6 +343,20 @@ const data = {
                 },
                 {
                     image: hero3
+                },
+            ],
+            content: [
+                {
+                    title: "Innovating the Future of Construction",
+                    subTitle: "Discover EDMA GmbH's Decade of Excellence in Civil Engineering and Consulting"
+                },
+                {
+                    title: "Mastering Efficiency, Minimizing Impact",
+                    subTitle:"EDMA GmbH: Your Partner for Sustainable Infrastructure Solutions"
+                },
+                {
+                    title: "Setting New Standards in Mechanical Services",
+                    subTitle:"EDMA GmbH: Pioneering HVAC Engineering in the Region"
                 },
             ]
         },
