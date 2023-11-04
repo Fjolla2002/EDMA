@@ -6,19 +6,19 @@ import ContentContainer from '../../ContentContainer/ContentContainer';
 
 const About = () => {
     const [{lang}, dispatch] = useContext(Context);
-    const datas = {
-        sectionTitle: `${data[lang].homeAbout.title}`,
-        sectionSubTitle: `${data[lang].homeAbout.subTitle}`,
-        sectionDesc: `${data[lang].homeAbout.desc}`,
-        btnText: `${data[lang].homeAbout.btnText}`,
-        btnLink: `${data[lang].homeAbout.btnLink}`,
-    }
+    
   return (
     <div className='about'>
         <div className='container'>
             <div className='about-content'>
                 <div className='left-side'>
-                    <ContentContainer data={datas}/>
+                    <ContentContainer 
+                        sectionTitle={data[lang].homeAbout.title}
+                        sectionSubTitle={data[lang].homeAbout.subTitle}
+                        sectionDesc={data[lang].homeAbout.desc}
+                        btnText={data[lang].homeAbout.btnText}
+                        btnLink={data[lang].homeAbout.btnLink}
+                    />
                 </div>
                 <div className='right-side'>
                     <img src={data[lang].homeAbout.aboutImg} alt="home about" />

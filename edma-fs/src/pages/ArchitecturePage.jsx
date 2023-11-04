@@ -1,8 +1,11 @@
 import React from 'react'
+import Wrapper from '../components/ArchitectureComponents/Wrapper'
 
 const ArchitecturePage = () => {
   return (
-    <div>ArchitecturePage</div>
+    <div>
+      <Wrapper/>
+    </div>
   )
 }
 
