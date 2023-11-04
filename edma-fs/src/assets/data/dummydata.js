@@ -3,6 +3,25 @@ import ircon from '../images/ircon.png';
 import topol from '../images/topol.png';
 import czech from '../images/czech.png';
 import rks from '../images/rks.png';
+import architecture1 from '../images/architecture1.webp';
+import architecture2 from '../images/architecture2.webp';
+import architecture3 from '../images/architecture3.webp';
+import architecture4 from '../images/architecture4.webp';
+import architecture5 from '../images/architecture5.webp';
+import architecture6 from '../images/architecture6.webp';
+import energy1 from '../images/energy1.png';
+import energy2 from '../images/energy2.png';
+import energy3 from '../images/energy3.png';
+import energy4 from '../images/energy4.png';
+import energy5 from '../images/energy5.png';
+import energy6 from '../images/energy6.png';
+import water1 from '../images/water1.png';
+import water2 from '../images/water2.png';
+import water3 from '../images/water3.png';
+import water4 from '../images/water4.png';
+import water5 from '../images/water5.png';
+import water6 from '../images/water6.png';
+
 
 const data = {
     ger: {
@@ -156,17 +175,77 @@ const data = {
             {
                 title: "DIE ARCHITEKTUR",
                 desc: "Unsere Priorität ist es, die besten Einrichtungen und Gebäude für Wohnen, Arbeiten und Freizeit zu entwerfen. Wir entwickeln Projekte vom Konzeptentwurf bis zu den endgültigen Details, basierend auf den Anforderungen des Kunden und unter Berücksichtigung der Baukriterien und -bedingungen, mit dem alleinigen Ziel, die Kontinuität des Konzeptentwurfs und des Gebäudes mit hoher Qualität zu gewährleisten. Gutes Design, das auf der Wahrnehmung vor Ort basiert, ist der Schlüssel zu adäquatem und qualitativ hochwertigem Design. In diesem Tätigkeitsfeld plant unser professionelles Team aus erfahrenen Architekten, Statikern, Bauingenieuren und Detailplanern oberirdische Bauwerke, die mit einem hohen technischen Standard ausgestattet sind. Solche Projekte werden von uns in allen Phasen umfassend betreut. Mit Schweizer Standards für Gesundheits-, Bildungs-, Sport-, Verwaltungs-, Hotel- und Industriegebäude.",
-                btnText: "PROJEKTE ANZEIGEN"
+                btnText: "PROJEKTE ANZEIGEN",
+                images: [
+                    {
+                        image: architecture1
+                    },
+                    {
+                        image: architecture2
+                    },
+                    {
+                        image: architecture3
+                    },
+                    {
+                        image: architecture4
+                    },
+                    {
+                        image: architecture5
+                    },
+                    {
+                        image: architecture6
+                    },
+                ]
             },
             {
                 title: "ENERGIEEFFIZIENZ & ERNEUERBARE ENERGIE",
                 desc: "Energieeffizienz bedeutet einfach, weniger Energie zu verbrauchen, um die gleiche Aufgabe zu erfüllen – das heißt, Energieverschwendung zu vermeiden. Energieeffizienz bringt eine Vielzahl von Vorteilen mit sich: Reduzierung der Treibhausgasemissionen, Reduzierung der Nachfrage nach Energieimporten und Senkung unserer Kosten auf Haushalts- und Wirtschaftsebene. Auch wenn erneuerbare Energietechnologien dazu beitragen, diese Ziele zu erreichen, ist die Verbesserung der Energieeffizienz der kostengünstigste – und oft der unmittelbarste – Weg, den Einsatz fossiler Brennstoffe zu reduzieren. In jedem Sektor der Wirtschaft gibt es enorme Möglichkeiten für Effizienzsteigerungen, sei es im Gebäudebereich, im Transportwesen, in der Industrie oder bei der Energieerzeugung. Aufgrund ihrer Rolle als großer Energieverbraucher sind Gebäude weltweit ein wichtiger Bereich für Verbesserungen der Energieeffizienz. Allerdings ist die Frage des Energieverbrauchs in Gebäuden nicht einfach, da die Innenbedingungen, die durch den Energieverbrauch erreicht werden können, sehr unterschiedlich sind. Die Maßnahmen zur Aufrechterhaltung des Komforts in Gebäuden, wie Beleuchtung, Heizung, Kühlung und Belüftung, verbrauchen alle Energie. Typischerweise wird der Grad der Energieeffizienz in einem Gebäude gemessen, indem die verbrauchte Energie durch die Grundfläche des Gebäudes dividiert wird, was als spezifischer Energieverbrauch (SEC) oder Energienutzungsintensität (EUI) bezeichnet wird.",
-                btnText: "PROJEKTE ANZEIGEN"
+                btnText: "PROJEKTE ANZEIGEN",
+                images: [
+                    {
+                        image: energy1
+                    },
+                    {
+                        image: energy2
+                    },
+                    {
+                        image: energy3
+                    },
+                    {
+                        image: energy4
+                    },
+                    {
+                        image: energy5
+                    },
+                    {
+                        image: energy6
+                    },
+                ]
             },
             {
                 title: "WASSER & INFRASTRUKTUR",
                 desc: "Unter Infrastruktur versteht man die grundlegenden Einrichtungen und Systeme, die ein Land, eine Stadt oder ein anderes Gebiet versorgen, einschließlich der Dienste und Einrichtungen, die für das Funktionieren seiner Wirtschaft erforderlich sind. Die Infrastruktur besteht aus öffentlichen und privaten physischen Verbesserungen wie Straßen, Eisenbahnen, Brücken, Tunneln, Wasserversorgung, Abwasserkanälen, Stromnetzen und Telekommunikation (einschließlich Internetkonnektivität und Breitbandgeschwindigkeiten). Im Allgemeinen wurde es auch definiert als „die physischen Komponenten miteinander verbundener Systeme, die Waren und Dienstleistungen bereitstellen, die für die Ermöglichung, Aufrechterhaltung oder Verbesserung der gesellschaftlichen Lebensbedingungen unerlässlich sind“. Es gibt zwei allgemeine Arten, die Infrastruktur anzuzeigen: Hard oder Soft. Unter harter Infrastruktur versteht man die physischen Netzwerke, die für das Funktionieren einer modernen Industrie erforderlich sind. Dazu gehören Straßen, Brücken, Eisenbahnen usw. Als weiche Infrastruktur werden alle Institutionen bezeichnet, die die wirtschaftlichen, gesundheitlichen, sozialen und kulturellen Standards eines Landes aufrechterhalten. Dazu gehören Bildungsprogramme, amtliche Statistiken, Parks und Freizeiteinrichtungen, Strafverfolgungsbehörden und Rettungsdienste. Infrastruktur ist der Begriff für die grundlegenden physischen Systeme eines Unternehmens oder einer Nation – Transport-, Kommunikations-, Abwasser-, Wasser- und Elektrizitätssysteme sind Beispiele für Infrastruktur. Bei diesen Systemen handelt es sich in der Regel um kostenintensive Investitionen, die für die wirtschaftliche Entwicklung und den Wohlstand eines Landes von entscheidender Bedeutung sind. Projekte im Zusammenhang mit Infrastrukturverbesserungen können öffentlich, privat oder durch öffentlich-private Partnerschaften finanziert werden. In wirtschaftlicher Hinsicht geht es bei der Infrastruktur häufig um die Produktion öffentlicher Güter oder Produktionsprozesse, die natürliche Monopole unterstützen.",
-                btnText: "PROJEKTE ANZEIGEN"
+                btnText: "PROJEKTE ANZEIGEN",
+                images: [
+                    {
+                        image: water1
+                    },
+                    {
+                        image: water2
+                    },
+                    {
+                        image: water3
+                    },
+                    {
+                        image: water4
+                    },
+                    {
+                        image: water5
+                    },
+                    {
+                        image: water6
+                    },
+                ]
             },
         ]
     },
@@ -320,17 +399,77 @@ const data = {
             {
                 title: "ARCHITECTURE",
                 desc: "Our priority is to design the best facilities and buildings for living, working and leisure. We develop projects from concept design to final details, based on the client's requirements and taking into account the construction criteria and conditions, with the sole aim of ensuring the continuity of the concept design and the building with high quality. Good design based on local perception is the key to adequate and high quality design. In this field of activity, our professional team of experienced architects, structural engineers, civil engineers and detailed planners plan above-ground structures that are equipped to a high technical standard. We provide comprehensive support for such projects in all phases. With Swiss standards for health, education, sports, administrative, hotel and industrial buildings.",
-                btnText: "VIEW PROJECTS"
+                btnText: "VIEW PROJECTS",
+                images: [
+                    {
+                        image: architecture1
+                    },
+                    {
+                        image: architecture2
+                    },
+                    {
+                        image: architecture3
+                    },
+                    {
+                        image: architecture4
+                    },
+                    {
+                        image: architecture5
+                    },
+                    {
+                        image: architecture6
+                    },
+                ]
             },
             {
                 title: "ENERGY EFFIENCY & RENEWABLE ENERGY",
                 desc: "Energy efficiency simply means using less energy to perform the same task – that is, eliminating energy waste. Energy efficiency brings a variety of benefits: reducing greenhouse gas emissions, reducing demand for energy imports, and lowering our costs on a household and economy-wide level. While renewable energy technologies also help accomplish these objectives, improving energy efficiency is the cheapest – and often the most immediate – way to reduce the use of fossil fuels. There are enormous opportunities for efficiency improvements in every sector of the economy, whether it is buildings, transportation, industry, or energy generation. Buildings are an important field for energy efficiency improvements around the world because of their role as a major energy consumer. However, the question of energy use in buildings is not straightforward as the indoor conditions that can be achieved with energy use vary a lot. The measures that keep buildings comfortable, lighting, heating, cooling and ventilation, all consume energy. Typically the level of energy efficiency in a building is measured by dividing energy consumed with the floor area of the building which is referred to as specific energy consumption (SEC) or energy use intensity (EUI).",
-                btnText: "VIEW PROJECTS"
+                btnText: "VIEW PROJECTS",
+                images: [
+                    {
+                        image: energy1
+                    },
+                    {
+                        image: energy2
+                    },
+                    {
+                        image: energy3
+                    },
+                    {
+                        image: energy4
+                    },
+                    {
+                        image: energy5
+                    },
+                    {
+                        image: energy6
+                    },
+                ]
             },
             {
                 title: "WATER & INFRASTRUCTURE",
                 desc: "Infrastructure is the fundamental facilities and systems serving a country, city, or other area, including the services and facilities necessary for its economy to function. Infrastructure is composed of public and private physical improvements such as roads, railways, bridges, tunnels, water supply, sewers, electrical grids, and telecommunications (including Internet connectivity and broadband speeds). In general, it has also been defined as “the physical components of interrelated systems providing commodities and services essential to enable, sustain, or enhance societal living conditions”. There are two general types of ways to view infrastructure, hard or soft. Hard infrastructure refers to the physical networks necessary for the functioning of a modern industry. This includes roads, bridges, railways, etc. Soft infrastructure refers to all the institutions that maintain the economic, health, social, and cultural standards of a country. This includes educational programs, official statistics, parks and recreational facilities, law enforcement agencies, and emergency services. Infrastructure is the term for the basic physical systems of a business or nation—transportation, communication, sewage, water, and electric systems are all examples of infrastructure. These systems tend to be high-cost investments and are vital to a country’s economic development and prosperity. Projects related to infrastructure improvements may be funded publicly, privately, or through public-private partnerships. In economic terms infrastructure often involves the production of public goods or production processes that support natural monopolies.",
-                btnText: "VIEW PROJECTS"
+                btnText: "VIEW PROJECTS",
+                images: [
+                    {
+                        image: water1
+                    },
+                    {
+                        image: water2
+                    },
+                    {
+                        image: water3
+                    },
+                    {
+                        image: water4
+                    },
+                    {
+                        image: water5
+                    },
+                    {
+                        image: water6
+                    },
+                ]
             },
         ]
     }

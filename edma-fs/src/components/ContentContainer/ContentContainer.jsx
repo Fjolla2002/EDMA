@@ -3,7 +3,7 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import {NavLink} from 'react-router-dom';
 import './content.scss';
 
-const ContentContainer = ({sectionTitle, sectionSubTitle, sectionDesc, btnLink, btnText, afterLine}) => {
+const ContentContainer = ({sectionTitle, sectionSubTitle, sectionDesc, btnLink, btnText, afterLine, onClick}) => {
   return (
     <div className='content'>
         <SectionTitle title={sectionTitle} beforeLine={true} afterLine={afterLine}/>
@@ -16,7 +16,7 @@ const ContentContainer = ({sectionTitle, sectionSubTitle, sectionDesc, btnLink, 
                 </button>
             </NavLink>
         ): (
-            <button className='red-btn'>
+            <button className='red-btn' onClick={onClick}>
                 {btnText}
             </button>
         )}
