@@ -15,7 +15,6 @@ const Middle = () => {
                     {data[lang].aboutPage.middle.left.map((el) => (
                         <div className='number-content' key={el.name}>
                             <NumberIncrement number={el.number}/>
-                            {/* <span>{el.number}</span> */}
                             <p>{el.name}</p>
                         </div>
                     ))}

@@ -21,6 +21,9 @@ import water3 from '../images/water3.png';
 import water4 from '../images/water4.png';
 import water5 from '../images/water5.png';
 import water6 from '../images/water6.png';
+import hero1 from '../images/hero1.png';
+import hero2 from '../images/hero2.png';
+import hero3 from '../images/hero3.png';
 
 
 const data = {
@@ -77,6 +80,19 @@ const data = {
             copyright: {
                 name: "Urheberrecht © 2023"
             }
+        },
+        homeHero: {
+            images:[
+                {
+                    image: hero1
+                },
+                {
+                    image: hero2
+                },
+                {
+                    image: hero3
+                },
+            ]
         },
         homeAbout: {
             title: "Über uns",
@@ -302,6 +318,19 @@ const data = {
             copyright: {
                 name: "Copyright © 2023"
             }
+        },
+        homeHero: {
+            images:[
+                {
+                    image: hero1
+                },
+                {
+                    image: hero2
+                },
+                {
+                    image: hero3
+                },
+            ]
         },
         homeAbout: {
             title: "About Us",
