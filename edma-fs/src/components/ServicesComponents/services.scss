@@ -1,0 +1,70 @@
+.services {
+    padding: 100px 0;
+
+    .all-services {
+        padding: 50px 0;
+        margin-left: 70px;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        .single-service {
+            width: calc(50% - 40px);
+            background-color: #fff;
+            padding: 30px 30px 120px 30px;
+            position: relative;
+            box-shadow: 0 0 15px 0 rgba(128,128,128,0.5);
+
+            svg {
+                margin: 10px 0;
+            }
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                color: #898989;
+            }
+
+            button {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                cursor: pointer;
+                padding: 12px 32px;
+                font-size: 14px;
+                color: #fff;
+                background-color: #DB1E32;
+                border: 1px solid #DB1E32;
+                border-radius: 5px;
+                margin: 20px 0;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #DB1E32;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .services {
+        .all-services {
+            margin-left: 0;
+            width: 90%;
+            margin: 0 auto;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            .single-service {
+                width: 100%;
+            }
+
+        }
+    }
+}

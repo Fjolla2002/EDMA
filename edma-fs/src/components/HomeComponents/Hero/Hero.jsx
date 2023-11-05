@@ -34,8 +34,8 @@ const Hero = () => {
                         <p>{data[lang].homeHero.content[text].subTitle}</p>
                     </div>
                     <div className="slider-arrows">
-                        <span onClick={() => prevText()} className="arrow left">&#8249;</span>
-                        <span onClick={() => nextText()} className="arrow right">&#8250;</span>
+                        <span onClick={() => prevText()} className="arrow">&#8249;</span>
+                        <span onClick={() => nextText()} className="arrow">&#8250;</span>
                     </div>
                 </div>
             </div>
