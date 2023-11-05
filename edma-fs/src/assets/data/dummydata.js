@@ -28,6 +28,16 @@ import  civilEngineering from '../images/civilEngineering.jpg';
 import  consultingServices from '../images/consultingServices.jpg';
 import  architectureServices from '../images/architectureServices.jpg';
 import  wttp from '../images/wttp.jpg';
+import project1 from '../images/project1.jpeg';
+import project2 from '../images/project2.jpeg';
+import project3 from '../images/project3.jpeg';
+import project4 from '../images/project4.jpg';
+import project5 from '../images/project5.jpg';
+import project6 from '../images/project6.jpg';
+import project7 from '../images/project7.jpg';
+import project8 from '../images/project8.jpg';
+import project9 from '../images/project9.png';
+import project10 from '../images/project10.jpg';
 
 
 const data = {
@@ -330,6 +340,52 @@ const data = {
                     image: wttp
                 }
             ]
+        },
+        projectPage: {
+            title: "PROJEKTE",
+            projects: [
+                {
+                    title: "WHOHNDESIGN",
+                    image: project1
+                },
+                {
+                    title: "EDMA GMBH",
+                    image: project2
+                },
+                {
+                    title: "SPOT-TECH IMMOBILIEN AG",
+                    image: project3
+                },
+                {
+                    title: "GEMÜTICHES ECKHAUS",
+                    image: project4
+                },
+                {
+                    title: "METRO LOFT WOHNEN",
+                    image: project5
+                },
+                {
+                    title: "BAYVIEW-ANWESEN",
+                    image: project6
+                },
+                {
+                    title: "GREENFIELD-HERRENHAUS",
+                    image: project7
+                },
+                {
+                    title: "VERSTECK AM SEEUFER",
+                    image: project8
+                },
+                {
+                    title: "VILLEN MIT BERGBLICK",
+                    image: project9
+                },
+                {
+                    title: "SEASCAPE-RESIDENZEN",
+                    image: project10
+                },
+            ],
+            btnText: "MEHR LADEN"
         }
     },
     en: {
@@ -632,6 +688,52 @@ const data = {
                     image: wttp
                 }
             ]
+        },
+        projectPage: {
+            title: "PROJECTS",
+            projects: [
+                {
+                    title: "HOME DESIGN",
+                    image: project1
+                },
+                {
+                    title: "EDMA GMBH",
+                    image: project2
+                },
+                {
+                    title: "SPOT-TECH REAL ESTATE AG",
+                    image: project3
+                },
+                {
+                    title: "COZY CORNER HOUSE",
+                    image: project4
+                },
+                {
+                    title: "METRO LOFT LIVING",
+                    image: project5
+                },
+                {
+                    title: "BAYVIEW ESTATE",
+                    image: project6
+                },
+                {
+                    title: "GREENFIELD MANOR",
+                    image: project7
+                },
+                {
+                    title: "LAKEFRONT HIDEAWAY",
+                    image: project8
+                },
+                {
+                    title: "MOUNTAINVIEW VILLAS",
+                    image: project9
+                },
+                {
+                    title: "SEASCAPE RESIDENCES",
+                    image: project10
+                },
+            ],
+            btnText: "LOAD MORE"
         }
     }
 }

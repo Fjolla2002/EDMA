@@ -1,0 +1,65 @@
+.projects {
+    padding: 100px 0;
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    button {
+        cursor: pointer;
+        padding: 12px 32px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #DB1E32;
+        border: 1px solid #DB1E32;
+        border-radius: 5px;
+        margin: 20px 0;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+            color: #DB1E32;
+        }
+    }
+
+    .all-projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .single-project {
+            flex-grow: 1;
+            width: calc(33% - 20px);
+            max-width: calc(33% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .project-title {
+                margin: 20px 0;
+                font-size: 16px;
+                color: #898989;
+                letter-spacing: 3px;
+            }
+
+
+
+            a {
+                filter: grayscale(100%);
+                transition: all 0.4s ease-in-out;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+
+                &:hover {
+                    filter: grayscale(0%);
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}

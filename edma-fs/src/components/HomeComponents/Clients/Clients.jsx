@@ -12,7 +12,6 @@ const Clients = () => {
     const getClient = (el) => {
         setClient(el);
     }
-    console.log(client);
   return (
     <div className='clients'>
         <div className='container'>
