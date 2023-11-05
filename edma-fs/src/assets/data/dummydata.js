@@ -24,6 +24,10 @@ import water6 from '../images/water6.png';
 import hero1 from '../images/hero1.png';
 import hero2 from '../images/hero2.png';
 import hero3 from '../images/hero3.png';
+import  civilEngineering from '../images/civilEngineering.jpg';
+import  consultingServices from '../images/consultingServices.jpg';
+import  architectureServices from '../images/architectureServices.jpg';
+import  wttp from '../images/wttp.jpg';
 
 
 const data = {
@@ -289,7 +293,8 @@ const data = {
                         },
                      ],
                      desc: "Die EDMA GmbH bietet umfassende Tiefbaulösungen, von der Standortplanung und -entwicklung bis hin zur Tragwerksplanung, und sorgt so für sichere, effiziente und konforme Bauprojekte",
-                     btnText: "MEHR"
+                     btnText: "MEHR",
+                     image: civilEngineering
                 },
                 {
                     title: "Beratungsleistungen",
@@ -299,7 +304,8 @@ const data = {
                        },
                     ],
                     desc: "Die Beratungsleistungen der EDMA GmbH decken ein breites Spektrum ab, darunter Projektmanagement, Umweltverträglichkeitsprüfung, Einhaltung gesetzlicher Vorschriften, Kostenschätzung und Nachhaltigkeitsberatung. So stellen wir sicher, dass Ihre Projekte sorgfältig geplant, umweltverträglich und im Rahmen des Budgets liegen.",
-                    btnText: "MEHR"
+                    btnText: "MEHR",
+                    image: consultingServices
                 },
                 {
                    title: "Architekturdienstleistungen",
@@ -309,7 +315,8 @@ const data = {
                         }
                    ],
                     desc: "Die Architekturdienstleistungen der EDMA GmbH umfassen ein breites Spektrum an Fachwissen, darunter Architekturdesign, Konzeptentwurf und Masterplanung, Gebäuderenovierung und -sanierung, 3D-Rendering und -Visualisierung sowie die sorgfältige Einhaltung der Bauvorschriften, um die Umsetzung Ihrer architektonischen Visionen mit Präzision und Kreativität sicherzustellen .",
-                    btnText: "MEHR"
+                    btnText: "MEHR",
+                    image: architectureServices
                 },
                 {
                     title: "WWTP Dienstleistungen",
@@ -319,7 +326,8 @@ const data = {
                         },
                     ],
                     desc: "Die EDMA GmbH ist auf die Bereitstellung umfassender Lösungen für Abwasseraufbereitungsanlagen (WWTP) spezialisiert, einschließlich Design und Bau, Prozessoptimierung, Einhaltung von Umweltvorschriften, schlüsselfertigen Projekten sowie laufender Wartungs- und Betriebsunterstützung, um ein effizientes und umweltbewusstes Abwassermanagement sicherzustellen.",
-                    btnText: "MEHR"
+                    btnText: "MEHR",
+                    image: wttp
                 }
             ]
         }
@@ -586,7 +594,8 @@ const data = {
                         
                     ],
                     desc: "EDMA GmbH provides comprehensive civil engineering solutions, from site planning and development to structural engineering, ensuring safe, efficient, and compliant construction projects.",
-                    btnText: "MORE"
+                    btnText: "MORE",
+                    image: civilEngineering
                 },
                 {
                     title: "Consulting Services",
@@ -596,7 +605,8 @@ const data = {
                         },
                     ],
                     desc: "EDMA GmbH's consulting services cover a wide spectrum, including project management, environmental impact assessment, regulatory compliance, cost estimation, and sustainability consultation, ensuring your projects are meticulously planned, environmentally responsible, and within budget.",
-                    btnText: "MORE"
+                    btnText: "MORE",
+                    image: consultingServices
                 },
                 {
                     title: "Architecture Services",
@@ -607,7 +617,8 @@ const data = {
 
                     ],
                     desc: "EDMA GmbH's architecture services encompass a broad range of expertise, including architectural design, conceptual design and master planning, building renovation and restoration, 3D rendering and visualization, and meticulous adherence to building code compliance, ensuring the realization of your architectural visions with precision and creativity.",
-                    btnText: "MORE"
+                    btnText: "MORE",
+                    image: architectureServices
                 },
                 {
                     title: "WWTP Services",
@@ -617,7 +628,8 @@ const data = {
                         },
                     ],
                     desc: "EDMA GmbH specializes in delivering comprehensive solutions for Waste Water Treatment Plants (WWTP), including design and construction, process optimization, environmental compliance, turnkey projects, and ongoing maintenance and operation support, ensuring efficient and environmentally responsible wastewater management.",
-                    btnText: "MORE"
+                    btnText: "MORE",
+                    image: wttp
                 }
             ]
         }

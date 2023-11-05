@@ -1,11 +1,18 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { data } from '../../assets/data/dummydata';
 import { Context } from '../../Context/Language';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import './services.scss';
+import Modal from '../HomeComponents/Clients/Modal';
 
 const Services = () => {
     const [{lang}, dispatch] = useContext(Context);
+    const [service, setService] = useState();
+
+    const getService = (el) => {
+        setService(el);
+    }
+
   return (
     <div className='services'>
         <div className="container">
@@ -27,12 +34,22 @@ const Services = () => {
                             </svg>
                             <h3>{el.title}</h3>
                             <p>{el.desc}</p>
-                            <button>{el.btnText}</button>
+                            <button onClick={() => getService(el)}>
+                                {el.btnText}
+                            </button>
                         </div>
                     ))
                 }
             </div>
         </div>
+        {service && (
+            <Modal
+                logo={service.image}
+                name={service.title}
+                desc={service.desc}
+                closeModal={() => setService()}
+            />
+        )}
     </div>
   )
 }
