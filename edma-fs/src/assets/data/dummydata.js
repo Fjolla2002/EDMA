@@ -474,6 +474,64 @@ const data = {
             text: "Leider wurde die Seite nicht gefunden",
             btnText: "Gehe zu Heim",
             btnLink: "/"
+        },
+        registerPage: {
+            title: "Registrieren Sie sich bei der EDMA GmbH",
+            successText: "Sie sind erfolgreich registriert",
+            accountExists: "Sie haben bereits ein Konto?",
+            login: "Inloggen",
+            loginPath: "/login",
+            btnText: "Registrieren",
+            inputs: [
+                {
+                    name: "username",
+                    label: "Nutzername",
+                    errors: [
+                        {
+                            error: "Benutzername wird benötigt"
+                        }
+                    ]
+                },
+                {
+                    name: "email",
+                    label: "Email",
+                    errors: [
+                        {
+                            error: "E-Mail ist bereits vergeben"
+                        },
+                        {
+                            error: "E-Mail ist erforderlich"
+                        },
+                        {
+                            error: "Ungültige E-Mail-Adresse"
+                        }
+                    ]
+                },
+                {
+                    name: "password",
+                    label: "Passwort",
+                    errors: [
+                        {
+                            error: "Passwort wird benötigt"
+                        },
+                        {
+                            error: "Das Passwort muss mindestens 8 Zeichen lang sein"
+                        }
+                    ]
+                },
+                {
+                    name: "confirmPassword",
+                    label: "Bestätige das Passwort",
+                    errors: [
+                        {
+                            error: "Bitte bestätigen Sie das Passwort"
+                        },
+                        {
+                            error: "Passwörter stimmen nicht überein"
+                        },
+                    ]
+                },
+            ],
         }
     },
     en: {
@@ -902,7 +960,7 @@ const data = {
                     },
                 ],
                 btnText: "SEND MESSAGE",
-                succesText: "Thank you for submiting the form"
+                successText: "Thank you for submiting the form"
             }
         },
         errorPage: {
@@ -910,6 +968,64 @@ const data = {
             text: "Sorry, the page not found",
             btnText: "Go to Home",
             btnLink: "/"
+        },
+        registerPage: {
+            title: "Register to EDMA GmbH",
+            successText: "You are successfully registered",
+            accountExists: "Already have an account?",
+            login: "Login",
+            loginPath: "/login",
+            btnText: "Register",
+            inputs: [
+                {
+                    name: "username",
+                    label: "Username",
+                    errors: [
+                        {
+                            error: "Username is required"
+                        }
+                    ]
+                },
+                {
+                    name: "email",
+                    label: "Email",
+                    errors: [
+                        {
+                            error: "Email is already taken"
+                        },
+                        {
+                            error: "Email is required"
+                        },
+                        {
+                            error: "Invalid email address"
+                        }
+                    ]
+                },
+                {
+                    name: "password",
+                    label: "Password",
+                    errors: [
+                        {
+                            error: "Password is required"
+                        },
+                        {
+                            error: "Password must be at least 8 characters long"
+                        }
+                    ]
+                },
+                {
+                    name: "confirmPassword",
+                    label: "Confirm Password",
+                    errors: [
+                        {
+                            error: "Please confirm password"
+                        },
+                        {
+                            error: "Passwords do not match"
+                        },
+                    ]
+                },
+            ],
         }
     }
 }

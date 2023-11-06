@@ -114,6 +114,7 @@ const Form = () => {
                 console.log(result.text);
                 console.log(formData);
                 setSuccessfullySend(data[lang].contactPage.form.successText)
+                console.log(successfullySend);
                 setShowSuccessMessage(true);
                     setTimeout(() => {
                         setShowSuccessMessage(false);

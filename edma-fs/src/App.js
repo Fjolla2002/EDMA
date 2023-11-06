@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 import SingleProject from './components/ProjectsComponents/SingleProject';
 import ScrollToTop from './components/ScrollToTop';
 import ErrorPage from './pages/ErrorPage';
+import RegisterPage from './pages/RegisterPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/projects' element={<ProjectsPage/>}/>
           <Route path='/projects/:title' element={<SingleProject/>}/>
           <Route path='/contact' element={<ContactPage/>}/>
+          <Route path='/register' element={<RegisterPage/>}/>
           <Route path='*' element={<ErrorPage/>}/>
         </Routes>
         <Footer/>
