@@ -465,7 +465,8 @@ const data = {
                         ]
                     },
                 ],
-                btnText: "NACHRICHT SENDEN"
+                btnText: "NACHRICHT SENDEN",
+                successText: "Vielen Dank für das Absenden des Formulars",
             }
         }
     },
@@ -894,7 +895,8 @@ const data = {
                         ]
                     },
                 ],
-                btnText: "SEND MESSAGE"
+                btnText: "SEND MESSAGE",
+                succesText: "Thank you for submiting the form"
             }
         }
     }

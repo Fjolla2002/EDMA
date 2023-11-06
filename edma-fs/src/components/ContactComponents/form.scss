@@ -56,7 +56,15 @@
                     opacity: 0.8; 
                     pointer-events: none; 
                 }
-              }
+            }
+
+            .error-text {
+                color: #DB1E32;
+            } 
+
+            .success-text {
+                color: #32a01c;
+            }
         }
     }
 }

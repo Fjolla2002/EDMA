@@ -16,6 +16,8 @@ const Form = () => {
     });
     const [errors, setErrors] = useState({});
     const [disbledBtn, setDisabledBtn] = useState(false);
+    const [successfullySend, setSuccessfullySend] = useState("");
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     const getErrorMessages = (error) => {
         return data[lang].contactPage.form.inputs.find(input => input.name === error).errors;
@@ -90,23 +92,18 @@ const Form = () => {
         }
         if(!formData.user_email.trim() || formData.user_email === ""){
             validation.user_email = data[lang].contactPage.form.inputs[1].errors[0].error;
-            console.log(validation.user_email);
         }
         else if(!/\S+@\S+\S\.\S+/.test(formData.user_email)){
             validation.user_email = data[lang].contactPage.form.inputs[1].errors[1].error;
-            console.log(validation.user_email);
         }
         if(!formData.user_phone.trim() || formData.user_phone === ""){
             validation.user_phone = data[lang].contactPage.form.inputs[2].errors[0].error;
-            console.log(validation.user_phone);
         }
         else if(!formData.user_phone.startsWith("0") || formData.user_phone.length !== 10){
             validation.user_phone = data[lang].contactPage.form.inputs[2].errors[1].error;
-            console.log(validation.user_phone);
         }
         if(formData.message === "") {
             validation.message = data[lang].contactPage.form.inputs[3].errors[0].error;
-            console.log(validation.message);
         }
 
         setErrors(validation);
@@ -116,6 +113,11 @@ const Form = () => {
             .then((result) => {
                 console.log(result.text);
                 console.log(formData);
+                setSuccessfullySend(data[lang].contactPage.form.successText)
+                setShowSuccessMessage(true);
+                    setTimeout(() => {
+                        setShowSuccessMessage(false);
+                }, 10000);
                 resetForm();
             }, (error) => {
                 console.log(error.text);
@@ -137,7 +139,7 @@ const Form = () => {
                         change={handleChanges}
                         value={formData.user_name}
                     />
-                    {errors.user_name && <span>{errors.user_name}</span>}
+                    {errors.user_name && <span className='error-text'>{errors.user_name}</span>}
                     <Input
                         type="text"
                         name="user_email"
@@ -145,7 +147,7 @@ const Form = () => {
                         change={handleChanges}
                         value={formData.user_email}
                     />
-                    {errors.user_email && <span>{errors.user_email}</span>}
+                    {errors.user_email && <span className='error-text'>{errors.user_email}</span>}
                     <Input
                         type="text"
                         name="user_phone"
@@ -153,7 +155,7 @@ const Form = () => {
                         change={handleChanges}
                         value={formData.user_phone}
                     />
-                    {errors.user_phone && <span>{errors.user_phone}</span>}
+                    {errors.user_phone && <span className='error-text'>{errors.user_phone}</span>}
                     <textarea
                         name="message"
                         rows="5"
@@ -161,13 +163,14 @@ const Form = () => {
                         onChange={handleChanges}
                         value={formData.message}
                     />
-                    {errors.message && <span>{errors.message}</span>}
+                    {errors.message && <span className='error-text'>{errors.message}</span>}
                     <input
                         type='submit'
                         className={`btn ${disbledBtn ? 'disabled-input' : ''}`}
                         value={data[lang].contactPage.form.btnText}
                         disabled={disbledBtn}
                     />
+                    {showSuccessMessage && <span className='success-text'>{successfullySend}</span>}
                 </div>
             </form>
         </div>
