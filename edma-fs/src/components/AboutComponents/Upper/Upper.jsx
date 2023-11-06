@@ -5,7 +5,7 @@ import { data } from '../../../assets/data/dummydata';
 import './upper.scss';
 
 const Upper = () => {
-    const [{lang}, dispatch] = useContext(Context);
+    const [{lang}] = useContext(Context);
 
   return (
     <div className='upper'>

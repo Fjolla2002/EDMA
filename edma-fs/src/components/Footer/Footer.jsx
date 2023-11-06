@@ -6,7 +6,7 @@ import Menu from '../Navbar/Menu';
 import './footer.scss';
 
 const Footer = () => {
-    const [{lang}, dispatch] = useContext(Context);
+    const [{lang}] = useContext(Context);
   return (
     <div className='footer'>
         <div className='top-footer'>

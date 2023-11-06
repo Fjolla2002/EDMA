@@ -4,7 +4,7 @@ import { Context } from '../../../Context/Language';
 import './hero.scss';
 
 const Hero = () => {
-    const [{ lang }, dispatch] = useContext(Context);
+    const [{ lang }] = useContext(Context);
     const [backImage, setBackImage] = useState(0);
     const nrOfImages = data[lang].homeHero.images.length;
     const [text, setText] = useState(0);

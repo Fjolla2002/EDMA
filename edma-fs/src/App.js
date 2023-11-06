@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage';
 import Language from './Context/Language';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import SingleProject from './components/ProjectsComponents/SingleProject';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/architecture' element={<ArchitecturePage/>}/>
           <Route path='/services' element={<ServicesPage/>}/>
           <Route path='/projects' element={<ProjectsPage/>}/>
+          <Route path='/projects/:title' element={<SingleProject/>}/>
           <Route path='/contact' element={<ContactPage/>}/>
         </Routes>
         <Footer/>

@@ -6,7 +6,7 @@ import './services.scss';
 import Modal from '../HomeComponents/Clients/Modal';
 
 const Services = () => {
-    const [{lang}, dispatch] = useContext(Context);
+    const [{lang}] = useContext(Context);
     const [service, setService] = useState();
 
     const getService = (el) => {

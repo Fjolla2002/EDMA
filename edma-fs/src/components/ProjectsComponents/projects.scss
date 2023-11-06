@@ -63,3 +63,16 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .projects {
+        .all-projects {
+            flex-direction: column;
+
+            .single-project {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}

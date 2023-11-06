@@ -5,7 +5,7 @@ import { Context } from '../../../Context/Language';
 import Modal from './Modal';
 
 const Clients = () => {
-    const [{lang}, dispatch] = useContext(Context);
+    const [{lang}] = useContext(Context);
     const clientsdata = data[lang].homeClients;
     const [client, setClient] = useState();
 

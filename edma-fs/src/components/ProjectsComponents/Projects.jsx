@@ -6,7 +6,7 @@ import { data } from '../../assets/data/dummydata';
 import {NavLink} from 'react-router-dom';
 
 const Projects = () => {
-    const [{lang}, dispatch] = useContext(Context);
+    const [{lang}] = useContext(Context);
     const [nrProjects, setNrProjects] = useState(3);
 
     const handleLoadMore = () => {
@@ -29,7 +29,7 @@ const Projects = () => {
                 {data[lang].projectPage.projects.slice(0, nrProjects).map((el) => (
                     <div className='single-project' key={el.title}>
                         <span className='project-title'>{el.title}</span>
-                        <NavLink>
+                        <NavLink to={`/projects/${el.title}`}>
                             <img src={el.image} alt={el.title} />
                         </NavLink>
                     </div>

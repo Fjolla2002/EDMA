@@ -6,7 +6,7 @@ import Modal from './Modal';
 import './wrapper.scss';
 
 const Wrapper = () => {
-  const [{ lang }, dispatch] = useContext(Context);
+  const [{ lang }] = useContext(Context);
   const [isModalOpen, setModalOpen] = useState(false);
   const [projectImages, setProjectImages] = useState([]);
 

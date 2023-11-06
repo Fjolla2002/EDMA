@@ -5,7 +5,7 @@ import './middle.scss';
 import NumberIncrement from './NumberIncrement';
 
 const Middle = () => {
-    const [{lang}, dispatch] = useContext(Context);
+    const [{lang}] = useContext(Context);
 
   return (
     <div className='middle'>

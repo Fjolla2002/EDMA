@@ -5,7 +5,7 @@ import { Context } from '../../../Context/Language';
 import ContentContainer from '../../ContentContainer/ContentContainer';
 
 const About = () => {
-    const [{lang}, dispatch] = useContext(Context);
+    const [{lang}] = useContext(Context);
     
   return (
     <div className='about'>
