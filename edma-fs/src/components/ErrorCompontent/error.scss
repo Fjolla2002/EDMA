@@ -1,0 +1,43 @@
+.error {
+    padding: 100px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .error-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h1 {
+            font-size: 100px;
+            color: #DB1E32;
+        }
+
+        p {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #898989;
+        }
+
+        a {
+            cursor: pointer;
+            padding: 12px 32px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #DB1E32;
+            border: 1px solid #DB1E32;
+            border-radius: 5px;
+            margin: 20px 0;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                background-color: transparent;
+                color: #DB1E32;
+            }
+        }
+    }
+}

@@ -468,6 +468,12 @@ const data = {
                 btnText: "NACHRICHT SENDEN",
                 successText: "Vielen Dank für das Absenden des Formulars",
             }
+        },
+        errorPage: {
+            title: "404",
+            text: "Leider wurde die Seite nicht gefunden",
+            btnText: "Gehe zu Heim",
+            btnLink: "/"
         }
     },
     en: {
@@ -898,6 +904,12 @@ const data = {
                 btnText: "SEND MESSAGE",
                 succesText: "Thank you for submiting the form"
             }
+        },
+        errorPage: {
+            title: "404",
+            text: "Sorry, the page not found",
+            btnText: "Go to Home",
+            btnLink: "/"
         }
     }
 }
