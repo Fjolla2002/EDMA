@@ -386,6 +386,87 @@ const data = {
                 },
             ],
             btnText: "MEHR LADEN"
+        },
+        contactPage: {
+            title: "KONTAKT",
+            desc: "LASSEN SIE UNS MIT UNS ZUSAMMENARBEITEN",
+            bigTitle: "Gemeinsam können wir Träume wahr werden lassen",
+            contactInfo: [
+                {
+                    name: "adresse:",
+                    values: [
+                        {
+                            value: "Täfernstrasse 2a 5405 Dättwil"
+                        }
+                    ]
+                },
+                {
+                    name: "telefonnummer:",
+                    values: [
+                        {
+                            value: "079 586 00 92"
+                        },
+                        {
+                            value: "044 593 54 11"
+                        },
+                    ]
+                },
+                {
+                    name: "email:",
+                    values: [
+                        {
+                            value: "edma@gmx.ch"
+                        }
+                    ]
+                },
+            ],
+            form: {
+                inputs: [
+                    {
+                        name: "user_name",
+                        label: "Name",
+                        errors: [
+                            {
+                                error: "Name ist erforderlich"
+                            }
+                        ]
+                    },
+                    {
+                        name: "user_email",
+                        label: "Email",
+                        errors: [
+                            {
+                                error: "E-Mail ist erforderlich"
+                            },
+                            {
+                                error: "Ungültige E-Mail-Adresse"
+                            }
+                        ]
+                    },
+                    {
+                        name: "user_phone",
+                        label: "Telefonnummer",
+                        errors : [
+                            {
+                                error: "Telefonnummer ist erforderlich"
+                            },
+                            {
+                                error: "Ungültige Telefonnummer"
+                            }
+                        ]
+                    },
+                    {
+                        name: "message",
+                        label: "Nachricht",
+                        errors: [
+                            {
+                                error: "Nachricht ist erforderlich"
+                            }
+                        ]
+                    },
+                ],
+                btnText: "NACHRICHT SENDEN"
+            }
         }
     },
     en: {
@@ -734,6 +815,87 @@ const data = {
                 },
             ],
             btnText: "LOAD MORE"
+        },
+        contactPage: {
+            title: "CONTACT",
+            desc: "LET US COLLABORATE WITH US",
+            bigTitle: "Together we can make dreams come true",
+            contactInfo: [
+                {
+                    name: "address:",
+                    values: [
+                        {
+                            value: "Täfernstrasse 2a 5405 Dättwil"
+                        }
+                    ]
+                },
+                {
+                    name: "phone number:",
+                    values: [
+                        {
+                            value: "079 586 00 92"
+                        },
+                        {
+                            value: "044 593 54 11"
+                        },
+                    ]
+                },
+                {
+                    name: "email:",
+                    values: [
+                        {
+                            value: "edma@gmx.ch"
+                        }
+                    ]
+                },
+            ],
+            form: {
+                inputs: [
+                    {
+                        name: "user_name",
+                        label: "Name",
+                        errors: [
+                            {
+                                error: "Name is required"
+                            }
+                        ]
+                    },
+                    {
+                        name: "user_email",
+                        label: "Email",
+                        errors: [
+                            {
+                                error: "Email is required"
+                            },
+                            {
+                                error: "Invalid email address"
+                            }
+                        ]
+                    },
+                    {
+                        name: "user_phone",
+                        label: "Phone Number",
+                        errors: [
+                            {
+                                error: "Phone number is required"
+                            },
+                            {
+                                error: "Invalid phone number"
+                            }
+                        ]
+                    },
+                    {
+                        name: "message",
+                        label: "Message",
+                        errors: [
+                            {
+                                error: "Message is required"
+                            }
+                        ]
+                    },
+                ],
+                btnText: "SEND MESSAGE"
+            }
         }
     }
 }

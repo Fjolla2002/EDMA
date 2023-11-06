@@ -1,0 +1,96 @@
+.contact {
+    padding: 100px 0;
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+
+        .up-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .contact-subtitle {
+                margin: 20px 0;
+                font-size: 50px;
+            }
+        }
+
+        .middle-content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 70%;
+            margin: 0 auto;
+            padding: 30px 0;
+
+            .left-contact {
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    li {
+                        margin-bottom: 20px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        span {
+                            font-weight: 900;
+                            font-size: 20px;
+                        }
+
+                        ul {
+                            margin: 20px 0;
+
+                            li p {
+                                color: #898989;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-contact {
+                width: 50%;
+            }
+        }
+
+        .bottom-contact {
+            width: 100%;
+
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        .contact-content {
+
+            .up-content {
+                .contact-subtitle {
+                    font-size: 25px;
+                }
+            }
+            .middle-content {
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+
+                .right-contact {
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+}
