@@ -532,6 +532,42 @@ const data = {
                     ]
                 },
             ],
+        },
+        loginPage: {
+            title: "Inloggen Sie sich bei EDMA GmbH an",
+            accountExists: "Haben Sie kein Konto?",
+            signUp: "Registrieren",
+            register: "/register",
+            btnText: "Inloggen",
+            inputs: [
+                {
+                    name: "email",
+                    label: "Email",
+                    errors: [
+                        {
+                            error: "E-Mail existiert nicht"
+                        },
+                        {
+                            error: "E-Mail ist erforderlich"
+                        },
+                        {
+                            error: "Ungültige E-Mail-Adresse"
+                        }
+                    ]
+                },
+                {
+                    name: "password",
+                    label: "Passwort",
+                    errors: [
+                        {
+                            error: "Passwort wird benötigt"
+                        },
+                        {
+                            error: "Falsches Passwort"
+                        }
+                    ]
+                },
+            ],
         }
     },
     en: {
@@ -1023,6 +1059,42 @@ const data = {
                         {
                             error: "Passwords do not match"
                         },
+                    ]
+                },
+            ],
+        },
+        loginPage: {
+            title: "Login to EDMA GmbH",
+            accountExists: "You do not have an account?",
+            signUp: "Register",
+            register: "/register",
+            btnText: "Login",
+            inputs: [
+                {
+                    name: "email",
+                    label: "Email",
+                    errors: [
+                        {
+                            error: "Email does not exists"
+                        },
+                        {
+                            error: "Email is required"
+                        },
+                        {
+                            error: "Invalid email address"
+                        }
+                    ]
+                },
+                {
+                    name: "password",
+                    label: "Password",
+                    errors: [
+                        {
+                            error: "Password is required"
+                        },
+                        {
+                            error: "Incorrect Password"
+                        }
                     ]
                 },
             ],

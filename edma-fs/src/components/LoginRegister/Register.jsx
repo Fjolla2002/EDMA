@@ -6,7 +6,7 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { data } from "../../assets/data/dummydata";
 import {NavLink} from 'react-router-dom';
 
-const RegistrationForm = () => {
+const Registration = () => {
     const [{lang,users}, dispatch] = useContext(Context);
     const [newUserData, setNewUserData] = useState({
         username: "",
@@ -128,4 +128,4 @@ const RegistrationForm = () => {
     );
 };
 
-export default RegistrationForm;
+export default Registration;

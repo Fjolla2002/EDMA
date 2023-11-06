@@ -13,12 +13,30 @@ const Reducer = (state, action) => {
                 localStorage.setItem("users", JSON.stringify(newUsers));
                 return {
                     ...state,
-                    users: newUsers,
+                    users: newUser,
                 };
             } else {
                 return state;
-            } 
-
+            }
+            case "LOGIN":
+                const loggedUser = action.payload;
+                const emailExisting = state.users.find(user => user.email === loggedUser.email);
+                if (emailExisting) {
+                    if (loggedUser.password === emailExisting.password) {
+                        localStorage.setItem("user", JSON.stringify(loggedUser)); // Store user in localStorage
+                        return {
+                            ...state,
+                            user: loggedUser,
+                        };
+                    } else {
+                        return {
+                            ...state,
+                            user: null,
+                        };
+                    }
+                }
+                break;
+            
         default:
             return state;
     }

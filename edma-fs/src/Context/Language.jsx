@@ -4,6 +4,7 @@ import Reducer from "./Reducer";
 const initialState = {
     lang: localStorage.getItem("lang") || "en",
     users: JSON.parse(localStorage.getItem("users")) || [],
+    user: localStorage.getItem("users") || null
 };
 
 const Language = ({ children }) => {
