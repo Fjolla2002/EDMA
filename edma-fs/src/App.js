@@ -10,11 +10,13 @@ import Language from './Context/Language';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import SingleProject from './components/ProjectsComponents/SingleProject';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Language>
       <BrowserRouter>
+      <ScrollToTop/>
       <Navbar/>
         <Routes>
           <Route path='/' element={<HomePage/>}/>
