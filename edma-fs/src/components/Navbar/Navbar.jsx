@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Context } from '../../Context/Language';
 import {data} from '../../assets/data/dummydata';
 import Menu from './Menu';
@@ -10,6 +10,17 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     const [{lang}, dispatch] = useContext(Context);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [checkUser, setCheckUser] = useState(localStorage.getItem("user"));
+
+    const logOut = () => {
+        localStorage.setItem("user", "")
+        setCheckUser("");
+      }
+
+
+  useEffect(() => {
+    setCheckUser(localStorage.getItem("user"));
+  }, [])
 
     const enLang = () => {
       const setLang = "en";
@@ -57,6 +68,11 @@ const Navbar = () => {
                                     />   
                                 </li>
                             ))}
+                            <li>
+                                {checkUser && 
+                                    <button className='red-btn' onClick={() => logOut()}>Log Out</button>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <div className='nav-language'>
