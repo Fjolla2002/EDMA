@@ -112,9 +112,7 @@ const Form = () => {
             emailjs.sendForm('service_c4115w6', 'template_i49917j', form.current, '4ZMf9g_yhpgBtCDQ2')
             .then((result) => {
                 console.log(result.text);
-                console.log(formData);
                 setSuccessfullySend(data[lang].contactPage.form.successText)
-                console.log(successfullySend);
                 setShowSuccessMessage(true);
                     setTimeout(() => {
                         setShowSuccessMessage(false);

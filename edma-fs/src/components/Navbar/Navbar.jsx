@@ -29,7 +29,7 @@ const Navbar = () => {
         type: "LANG",
         payload: { lang: setLang }
       })
-      toggleBtn();
+      setIsMenuOpen(!isMenuOpen);
     };
 
     const gerLang = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
         type: "LANG",
         payload: { lang: setLang }
       })
-      toggleBtn();
+      setIsMenuOpen(!isMenuOpen);
     };  
     
     const toggleBtn = () => {

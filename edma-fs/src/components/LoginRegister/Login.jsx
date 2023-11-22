@@ -32,16 +32,18 @@ const Login = () => {
             if(!/\S+@\S+\S\.\S+/.test(user.email)){
                 validation.email = data[lang].loginPage.inputs[0].errors[2].error;
             } 
-            if (!users.find(existingUser => existingUser.email === user.email)){
+            else if (!users.find(existingUser => existingUser.email === user.email)){
                 validation.email = data[lang].loginPage.inputs[0].errors[0].error;
             } 
         }
 
         if(!user.password.trim() || user.password === "") {
             validation.password = data[lang].loginPage.inputs[1].errors[0].error;
-        } else if(user.password !== users.find(existingUser => existingUser.email === user.email).password) {
-            validation.password = data[lang].loginPage.inputs[1].errors[1].error;
-        }
+        } else if(users.find(existingUser => existingUser.email === user.email)){
+            if(user.password !== users.find(existingUser => existingUser.email === user.email).password) {
+                validation.password = data[lang].loginPage.inputs[1].errors[1].error;
+            }
+        } 
         
         setErrors(validation); 
 
